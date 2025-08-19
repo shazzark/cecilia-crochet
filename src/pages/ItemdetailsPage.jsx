@@ -8,13 +8,14 @@ import toast from "react-hot-toast";
 // import { supabase } from "../utils/supabaseClient";
 import ReviewsSection from "../components/itemDetailsComponent/ReviewsSection";
 import ProductDetails from "../components/itemDetailsComponent/ProductDetails";
-import Quantityselector from "../components/itemDetailsComponent/Quantityselector";
+// import Quantityselector from "../components/itemDetailsComponent/Quantityselector";
 import SizeSelection from "../components/itemDetailsComponent/SizeSelection";
 import Breadcrumbs from "../components/itemDetailsComponent/Breadcrumbs";
 import ImageGallery from "../components/itemDetailsComponent/ImageGallery";
 import Buttons from "../components/itemDetailsComponent/Buttons";
 import ColorSelection from "../components/itemDetailsComponent/ColorSelection";
 import { supabase } from "../servicies/supabase";
+import Quantityselector from "../components/itemDetailsComponent/QuantitySelector";
 
 function ItemdetailsPage() {
   const { state } = useLocation();

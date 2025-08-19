@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Add these to your .gitignore
+echo "
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Keys
+*key*
+*secret*
+*password*
+*credential*
+" >> .gitignore
+
+# Pre-commit hook to prevent accidents
+npx husky add .husky/pre-commit "npm test && npx pretty-quick --staged"
