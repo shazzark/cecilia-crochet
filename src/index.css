@@ -1,0 +1,21 @@
+/* ALL @imports MUST come FIRST - no comments or whitespace above them! */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/600.css";
+
+/* THEN Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NOW you can add comments/custom styles */
+/* Your custom styles here */
+@layer base {
+  :root {
+    --color-crochet-primary: 244 162 97;
+  }
+  body {
+    @apply antialiased font-sans text-gray-800 bg-white;
+  }
+}

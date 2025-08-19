@@ -1,0 +1,89 @@
+/**
+ * GLOBALS.CSS - Tailwind Setup for Cecilia's Crochet
+ * 
+ * 1. All animations are handled by Framer Motion (no CSS animations needed)
+ * 2. Font imports are managed through @fontsource packages
+ * 3. Customizations are minimal and layer-specific
+ */
+
+/* Tailwind Directives (always first) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================
+   Base Layer
+   (Element defaults)
+   ================ */
+@layer base {
+  :root {
+    --color-crochet-primary: 244 162 97; /* Amber-500 in RGB */
+  }
+
+  body {
+    @apply antialiased font-sans text-gray-800 bg-white;
+    /* Smooth scroll for anchor links */
+    scroll-behavior: smooth;
+  }
+
+  /* Typography Hierarchy */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-gray-900 tracking-tight;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  /* Form elements use Inter font */
+  input,
+  textarea,
+  button,
+  select {
+    @apply font-sans;
+  }
+}
+
+/* ================
+   Components Layer
+   (Reusable overrides)
+   ================ */
+@layer components {
+  /* Primary crochet button */
+  .btn-crochet {
+    @apply px-6 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 
+           text-white font-semibold transition-colors shadow-md;
+  }
+
+  /* Product card container */
+  .product-card {
+    @apply border border-gray-200 rounded-xl overflow-hidden 
+           hover:shadow-lg transition-shadow;
+  }
+}
+
+/* ================
+   Utilities Layer
+   (Custom utilities)
+   ================ */
+@layer utilities {
+  /* Handmade decorative underline */
+  .underline-crochet {
+    @apply relative inline-block;
+    &::after {
+      @apply content-[''] absolute bottom-0 left-0 w-full h-1 
+             bg-amber-400 transform scale-x-90 origin-left;
+    }
+    &:hover::after {
+      @apply scale-x-100;
+    }
+  }
+}
