@@ -19,6 +19,7 @@ function ProfilePage() {
       await logout();
       console.log("Logout successful");
       toast.success("Logged out successfully");
+      navigate("/");
     } catch (error) {
       console.error("Logout error:", error);
       toast.error(error.message || "Failed to log out");
@@ -32,7 +33,7 @@ function ProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-crochetPrimary-50 py-8">
+    <div className="min-h-screen  py-8">
       <div className="container mx-auto px-4">
         {/* Header with Back Button */}
         <div className="flex items-center mb-8">

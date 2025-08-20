@@ -19,17 +19,17 @@ import SettingsPage from "./pages/SettingsPage";
 function App() {
   return (
     <div>
-      {/* Wrap your entire app with AuthProvider */}
       <AuthProvider>
         <BrowserRouter>
           <Routes>
+            {/* Main layout routes */}
             <Route path="/" element={<AppLayoutPages />}>
               <Route index element={<HomePages />} />
               <Route path="about" element={<AboutPages />} />
               <Route path="contact" element={<ContactPages />} />
               <Route path="product" element={<ProductPages />} />
 
-              {/* Protected Shop Route */}
+              {/* Protected Routes */}
               <Route
                 path="shop"
                 element={
@@ -38,19 +38,35 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              <Route
+                path="profile"
+                element={
+                  <ProtectedRoute>
+                    <ProfilePage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="settings"
+                element={
+                  <ProtectedRoute>
+                    <SettingsPage />
+                  </ProtectedRoute>
+                }
+              />
 
               <Route path="/itemdetails/:id" element={<ItemdetailsPage />} />
               <Route path="payment" element={<Payment />} />
             </Route>
+
+            {/* Auth routes outside layout */}
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
-            <Route path="settings" element={<SettingsPage />} />
-            <Route path="profile" element={<ProfilePage />} />
+
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
 
-        {/* Toast Notifications Provider - should be at root level */}
         <Toaster
           position="top-center"
           toastOptions={{
@@ -65,5 +81,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
