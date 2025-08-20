@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-// import { motion } from "framer-motion";
+
 import { fetchCrochetCollections } from "../../servicies/unsplashService";
 import Primarybutton from "../common/button/PrimaryButton";
-// import Primarybutton from "../common/button/PrimaryButton";
+// import PrimaryButton from "../common/button/Primarybutton";
 
 function FeaturedProductsSection() {
   const [collections, setCollections] = useState([]);
