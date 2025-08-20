@@ -185,13 +185,13 @@ function CollectionCard({ collection, index }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 + index * 0.05, duration: 0.4 }}
         >
-          <Primarybutton
+          <PrimaryButton
             className="w-full mt-4"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
             View Collection
-          </Primarybutton>
+          </PrimaryButton>
         </motion.div>
       </div>
     </motion.div>

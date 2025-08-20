@@ -1,5 +1,5 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 
 function EmailSettingsForm({
   emailData,
@@ -58,9 +58,9 @@ function EmailSettingsForm({
       </div>
 
       <div className="flex justify-end">
-        <Primarybutton type="submit" disabled={isLoading}>
+        <PrimaryButton type="submit" disabled={isLoading}>
           {isLoading ? "Sending..." : "Update Email"}
-        </Primarybutton>
+        </PrimaryButton>
       </div>
     </form>
   );

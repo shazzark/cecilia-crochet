@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 import { fetchCrochetCollections } from "../../servicies/unsplashService";
 
 export default function SeasonalSpotlight() {
@@ -58,9 +58,9 @@ export default function SeasonalSpotlight() {
               Lightweight crochet pieces perfect for warm weather
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Primarybutton className="px-8 py-3">
+              <PrimaryButton className="px-8 py-3">
                 Shop Seasonal Picks
-              </Primarybutton>
+              </PrimaryButton>
             </motion.div>
           </motion.div>
         </motion.div>

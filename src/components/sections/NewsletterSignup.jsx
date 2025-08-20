@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { supabase } from "../../servicies/supabase";
@@ -112,13 +112,13 @@ export default function NewsletterSignup() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Primarybutton
+                <PrimaryButton
                   type="submit"
                   className="px-6 py-3"
                   disabled={loading}
                 >
                   {loading ? "Subscribing..." : "Subscribe"}
-                </Primarybutton>
+                </PrimaryButton>
               </motion.div>
             </motion.form>
             <motion.p

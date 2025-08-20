@@ -1,7 +1,7 @@
 import { UserIcon } from "@heroicons/react/24/outline";
 import SecondaryButton from "../common/button/Secondarybutton";
 import { NavLink } from "react-router-dom";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 import ProfilePageHeader from "./ProfilePageHeader";
 import ProfileContentHeader from "./ProfileContentHeader";
 import ActivityCard from "./ActivityCard";
@@ -79,7 +79,7 @@ function MainContent({ user, setShowLogoutModal, isLoggingOut }) {
               Edit Profile
             </SecondaryButton>
           </NavLink>
-          <Primarybutton
+          <PrimaryButton
             onClick={() => setShowLogoutModal(true)}
             disabled={isLoggingOut}
             className="flex items-center"
@@ -98,7 +98,7 @@ function MainContent({ user, setShowLogoutModal, isLoggingOut }) {
               />
             </svg>
             {isLoggingOut ? "Logging Out..." : "Log Out"}
-          </Primarybutton>
+          </PrimaryButton>
         </div>
       </div>
     </div>

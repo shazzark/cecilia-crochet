@@ -1,4 +1,4 @@
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 
 function NotificationTabs({
   notificationSettings,
@@ -109,9 +109,9 @@ function NotificationTabs({
         </div>
 
         <div className="flex justify-end pt-6">
-          <Primarybutton onClick={handleNotificationUpdate}>
+          <PrimaryButton onClick={handleNotificationUpdate}>
             Save Notification Settings
-          </Primarybutton>
+          </PrimaryButton>
         </div>
       </div>
     </div>

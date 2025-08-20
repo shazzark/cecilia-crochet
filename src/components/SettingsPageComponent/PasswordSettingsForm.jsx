@@ -1,5 +1,5 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 
 function PasswordSettingsForm({
   handlePasswordUpdate,
@@ -94,9 +94,9 @@ function PasswordSettingsForm({
       </div>
 
       <div className="flex justify-end">
-        <Primarybutton type="submit" disabled={isLoading}>
+        <PrimaryButton type="submit" disabled={isLoading}>
           {isLoading ? "Updating..." : "Update Password"}
-        </Primarybutton>
+        </PrimaryButton>
       </div>
     </form>
   );

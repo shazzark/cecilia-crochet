@@ -52,9 +52,9 @@ function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Primarybutton className="px-8 py-4 text-lg">
+          <PrimaryButton className="px-8 py-4 text-lg">
             <NavLink to="/shop">Shop Now</NavLink>
-          </Primarybutton>
+          </PrimaryButton>
         </motion.div>
       </div>
 

@@ -28,9 +28,9 @@ export default function LogoutConfirmationModal({
           <SecondaryButton onClick={onCancel} disabled={isLoading}>
             Cancel
           </SecondaryButton>
-          <Primarybutton onClick={onConfirm} disabled={isLoading}>
+          <PrimaryButton onClick={onConfirm} disabled={isLoading}>
             {isLoading ? "Logging Out..." : "Log Out"}
-          </Primarybutton>
+          </PrimaryButton>
         </div>
       </div>
     </div>
