@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import PrimaryButton from "../common/button/PrimaryButton";
+// import PrimaryButton from "../common/button/PrimaryButton";
 import { NavLink } from "react-router-dom";
+import Primarybutton from "../common/button/PrimaryButton";
 
 function HeroSection() {
   return (
@@ -51,9 +52,9 @@ function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <PrimaryButton className="px-8 py-4 text-lg">
+          <Primarybutton className="px-8 py-4 text-lg">
             <NavLink to="/shop">Shop Now</NavLink>
-          </PrimaryButton>
+          </Primarybutton>
         </motion.div>
       </div>
 
