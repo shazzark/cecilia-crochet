@@ -35,7 +35,7 @@ echo "
 # Keys
 *key*
 *secret*
-*password*
+ 
 *credential*
 " >> .gitignore
 

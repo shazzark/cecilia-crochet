@@ -1,6 +1,7 @@
 import EmailSettingsForm from "./EmailSettingsForm";
-import PasswordSettingsForm from "./PasswordSettingsForm";
+// import PasswordSettingsForm from "./PasswordSettingsForm";
 import NotificationTabs from "./NotificationTabs";
+import PasswordSettingsForm from "./PasswordSettingsForm";
 import ProfileSettingsTabs from "./ProfileSettingsTabs";
 
 function TabsContent({
