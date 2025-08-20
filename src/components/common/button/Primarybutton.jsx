@@ -1,4 +1,4 @@
-function Primarybutton({ children, onClick, disabled }) {
+function PrimaryButton({ children, onClick, disabled }) {
   return (
     <button
       onClick={onClick}
@@ -17,4 +17,4 @@ function Primarybutton({ children, onClick, disabled }) {
   );
 }
 
-export default Primarybutton;
+export default PrimaryButton;

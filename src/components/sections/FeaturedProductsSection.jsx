@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 import { fetchCrochetCollections } from "../../servicies/unsplashService";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 // import PrimaryButton from "../common/button/Primarybutton";
 
 function FeaturedProductsSection() {

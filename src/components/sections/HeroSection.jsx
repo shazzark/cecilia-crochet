@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 // import PrimaryButton from "../common/button/PrimaryButton";
 import { NavLink } from "react-router-dom";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 
 function HeroSection() {
   return (
