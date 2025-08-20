@@ -1,5 +1,5 @@
 import SecondaryButton from "../common/button/Secondarybutton";
-import Primarybutton from "../common/button/PrimaryButton";
+import PrimaryButton from "../common/button/PrimaryButton";
 
 export default function LogoutConfirmationModal({
   onConfirm,
