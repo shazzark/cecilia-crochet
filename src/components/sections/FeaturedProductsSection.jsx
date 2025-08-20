@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 // import { motion } from "framer-motion";
 import { fetchCrochetCollections } from "../../servicies/unsplashService";
 import Primarybutton from "../common/button/PrimaryButton";
+// import Primarybutton from "../common/button/PrimaryButton";
 
 function FeaturedProductsSection() {
   const [collections, setCollections] = useState([]);
