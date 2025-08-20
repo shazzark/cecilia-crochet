@@ -60,7 +60,7 @@ function HeroSection() {
       {/* Decorative background elements */}
       {/* Top left circle (existing) */}
       <motion.div
-        className="absolute -top-10 -left-10 w-48 h-48 bg-crochetSecondary-400 rounded-full opacity-10"
+        className="absolute -top-10 -left-10 w-48 h-48 bg-crochetSecondary-400 rounded-full opacity-10 pointer-events-none"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.7, duration: 1, type: "spring" }}
@@ -68,7 +68,7 @@ function HeroSection() {
 
       {/* Bottom right circle (new matching element) */}
       <motion.div
-        className="absolute -bottom-10 -right-10 w-48 h-48 bg-crochetSecondary-400 rounded-full opacity-10"
+        className="absolute -bottom-10 -right-10 w-48 h-48 bg-crochetSecondary-400 rounded-full opacity-10 pointer-events-none"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.7, duration: 1, type: "spring" }}
@@ -77,7 +77,7 @@ function HeroSection() {
       {/* Additional decorative elements */}
       {/* Diagonal yarn-like line top right */}
       <motion.div
-        className="absolute top-20 right-20 w-64 h-1 bg-crochetPrimary-300 opacity-20 transform rotate-45"
+        className="absolute top-20 right-20 w-64 h-1 bg-crochetPrimary-300 opacity-20 transform rotate-45 pointer-events-none"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.9, duration: 0.8 }}
@@ -85,14 +85,14 @@ function HeroSection() {
 
       {/* Small decorative circles */}
       <motion.div
-        className="absolute bottom-1/4 left-1/4 w-16 h-16 bg-crochetPrimary-200 rounded-full opacity-10"
+        className="absolute bottom-1/4 left-1/4 w-16 h-16 bg-crochetPrimary-200 rounded-full opacity-10 pointer-events-none"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, duration: 0.7, type: "spring" }}
       />
 
       <motion.div
-        className="absolute top-1/3 right-1/3 w-12 h-12 bg-crochetSecondary-300 rounded-full opacity-15"
+        className="absolute top-1/3 right-1/3 w-12 h-12 bg-crochetSecondary-300 rounded-full opacity-15 pointer-events-none"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.8, duration: 0.7, type: "spring" }}

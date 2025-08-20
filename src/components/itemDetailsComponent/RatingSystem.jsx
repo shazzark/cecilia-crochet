@@ -11,6 +11,7 @@ export const RatingSystem = ({ initialRating, reviewCount, productId }) => {
 
   const handleRating = async (selectedRating) => {
     if (ratingSubmitted) return;
+    setUserRating(selectedRating);
 
     try {
       // Send rating to your backend

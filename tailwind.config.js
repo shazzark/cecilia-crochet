@@ -33,6 +33,16 @@ export default withMT({
           900: "#1F2937", // Strong headings (gray-900)
         },
       },
+      // ADD THIS ANIMATION SECTION:
+      animation: {
+        fadeIn: "fadeIn 0.3s ease-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],

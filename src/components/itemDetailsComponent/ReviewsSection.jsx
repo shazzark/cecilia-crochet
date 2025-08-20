@@ -9,7 +9,9 @@ function ReviewsSection({ product }) {
       className="mt-16 border-t pt-8"
     >
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold">Reviews</h2>
+        <h2 className="text-2xl font-bold text-crochetText-900">
+          Customer Reviews
+        </h2>
         <div className="flex items-center">
           <div className="rating rating-md mr-2">
             {[1, 2, 3, 4, 5].map((star) => (
@@ -17,124 +19,128 @@ function ReviewsSection({ product }) {
                 key={star}
                 type="radio"
                 name="rating-7"
-                className="mask mask-star-2 bg-orange-400"
+                className="mask mask-star-2 bg-crochetPrimary-500"
                 defaultChecked={star === Math.round(parseFloat(product.rating))}
                 readOnly
               />
             ))}
           </div>
-          <span className="text-gray-700">{product.rating}/5</span>
+          <span className="text-crochetText-700 font-medium">
+            {product.rating}/5
+          </span>
         </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
-        <div className="bg-gray-50 p-6 rounded-lg">
-          <h3 className="text-lg font-medium mb-4">Rozvisus & Rating</h3>
+        <div className="bg-crochetPrimary-50 p-6 rounded-lg border border-crochetPrimary-200">
+          <h3 className="text-lg font-medium mb-4 text-crochetText-800">
+            Rating Breakdown
+          </h3>
           <ul className="space-y-3">
-            <li className="flex justify-between">
-              <span>Vlastní státník</span>
+            <li className="flex justify-between items-center">
+              <span className="text-crochetText-700">Ease of Use</span>
               <div className="rating rating-xs">
                 <input
                   type="radio"
                   name="rating-1"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   defaultChecked
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-1"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-1"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-1"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-1"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
               </div>
             </li>
-            <li className="flex justify-between">
-              <span>Vlastní případní</span>
+            <li className="flex justify-between items-center">
+              <span className="text-crochetText-700">Pattern Quality</span>
               <div className="rating rating-xs">
                 <input
                   type="radio"
                   name="rating-2"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   defaultChecked
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-2"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-2"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-2"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-2"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
               </div>
             </li>
-            <li className="flex justify-between">
-              <span>Vlastní zákonníků</span>
+            <li className="flex justify-between items-center">
+              <span className="text-crochetText-700">Finished Result</span>
               <div className="rating rating-xs">
                 <input
                   type="radio"
                   name="rating-3"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   defaultChecked
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-3"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-3"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-3"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
                 <input
                   type="radio"
                   name="rating-3"
-                  className="mask mask-star-2 bg-orange-400"
+                  className="mask mask-star-2 bg-crochetPrimary-500"
                   readOnly
                 />
               </div>
@@ -142,45 +148,58 @@ function ReviewsSection({ product }) {
           </ul>
         </div>
 
-        <div className="bg-gray-50 p-6 rounded-lg">
-          <p className="text-gray-700 mb-4">
-            Na konkrétní dopravy nedaleko-li v společnosti žádný nárok (bez
-            ohledu funkce) použitý na předchozíme, že si budete umístěno, že si
-            mohou nastavit nový vývoj. Tedy dobu jsou vytvořeny na konkrétní
-            dopravy nebo na konkrétní průmysl. Všechny nákupové stanovení jsou
-            vytvořeny na konkrétní průmysl. Přištění, že může být vytvořena na
-            konkrétní průmysl, naleznete vypracovávané.
+        <div className="bg-crochetPrimary-50 p-6 rounded-lg border border-crochetPrimary-200">
+          <h3 className="text-lg font-medium mb-4 text-crochetText-800">
+            What Customers Say
+          </h3>
+          <p className="text-crochetText-700 mb-4 italic">
+            "This pattern was absolutely delightful to work with! The
+            instructions were clear and easy to follow, even for someone
+            relatively new to crochet. The finished piece looks exactly like the
+            photos and has become my favorite homemade item."
+          </p>
+          <p className="text-crochetText-600 text-sm">
+            - Sarah M., Beginner Crocheter
           </p>
         </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
-        <div className="bg-gray-50 p-6 rounded-lg">
-          <h3 className="text-lg font-medium mb-4">Oprava</h3>
-          <ul className="space-y-2">
-            <li>Beta</li>
-            <li>A termín hodnot</li>
+        <div className="bg-crochetPrimary-50 p-6 rounded-lg border border-crochetPrimary-200">
+          <h3 className="text-lg font-medium mb-4 text-crochetText-800">
+            Pattern Details
+          </h3>
+          <ul className="space-y-2 text-crochetText-700">
+            <li>• Skill Level: Intermediate</li>
+            <li>• Time Required: 8-12 hours</li>
+            <li>• Yardage: 400-500g worsted weight</li>
+            <li>• Hook Size: 5mm recommended</li>
           </ul>
         </div>
 
-        <div className="bg-gray-50 p-6 rounded-lg">
-          <h3 className="text-lg font-medium mb-4">Obnovení</h3>
-          <ul className="space-y-2">
-            <li>Celková</li>
-            <li>Přírodní</li>
-            <li>Zahraničního</li>
+        <div className="bg-crochetPrimary-50 p-6 rounded-lg border border-crochetPrimary-200">
+          <h3 className="text-lg font-medium mb-4 text-crochetText-800">
+            Materials Used
+          </h3>
+          <ul className="space-y-2 text-crochetText-700">
+            <li>• 100% Cotton Yarn</li>
+            <li>• Eco-friendly fibers</li>
+            <li>• Hypoallergenic materials</li>
+            <li>• Machine washable</li>
           </ul>
         </div>
       </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg">
-        <h3 className="text-lg font-medium mb-4">Značka: {product.designer}</h3>
-        <p className="text-gray-700">
-          Datum prohíteš rozpornou dle 9.1.2020/09.12.2020. Osobit je na
-          organizačním podpisem a bylo vhodné podporovat na organizačním úplně a
-          obvyklostech. Osobit je o nás, že dobrá práva s možností realizaci,
-          ale to, že má jednotlivý informací doporučená osobám spojené
-          odsouhlivým.
+      <div className="bg-crochetPrimary-50 p-6 rounded-lg border border-crochetPrimary-200">
+        <h3 className="text-lg font-medium mb-4 text-crochetText-800">
+          Designer: {product.designer}
+        </h3>
+        <p className="text-crochetText-700">
+          Each pattern is carefully crafted with love and attention to detail.
+          Our designs focus on creating timeless pieces that blend traditional
+          techniques with modern aesthetics. All patterns include step-by-step
+          instructions, detailed photos, and support for any questions you might
+          have along your crochet journey.
         </p>
       </div>
     </motion.section>

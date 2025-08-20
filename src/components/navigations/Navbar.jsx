@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import Logo from "../brand/Logo";
 import SecondaryButton from "../common/button/Secondarybutton";
 import { useAuth } from "../../Context/useAuh";
-// import { useAuth } from "../context/AuthContext";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +89,7 @@ function Navbar() {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden absolute w-full left-0 bg-crochetPrimary-100 z-10 transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute w-full left-0 bg-black bg-opacity-30 z-50 transition-all duration-300 ease-in-out ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-full pointer-events-none"
