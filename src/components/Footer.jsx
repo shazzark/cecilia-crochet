@@ -37,7 +37,7 @@ function Footer() {
       viewport={{ once: true }}
       variants={containerVariants}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto p-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Logo and Address */}
           <motion.div variants={itemVariants}>
@@ -45,22 +45,24 @@ function Footer() {
               <Logo />
             </div>
             <address className="not-italic">
-              <p>123 Yarn Street, Suite 200</p>
-              <p>San Francisco, CA 94107</p>
-              <p className="mt-2">(555) 123-4567</p>
+              {/* <p>Brains and hammers estate galadimwa</p> */}
+              <p>
+                Brains and hammers estate <br /> galadimwa Abuja
+              </p>
+              {/* <p className="mt-2">(+234)8132421252</p> */}
             </address>
           </motion.div>
 
           {/* Contact Us */}
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 p">
               <li>
                 <NavLink
                   to="/contact"
                   className="hover:text-crochetAccent-500 transition-colors"
                 >
-                  Contact Form
+                  Contact us
                 </NavLink>
               </li>
               <li>
@@ -68,16 +70,17 @@ function Footer() {
                   href="mailto:hello@ceciliacrochet.com"
                   className="hover:text-crochetAccent-500 transition-colors"
                 >
-                  hello@ceciliacrochet.com
+                  okonkwocecilia67 <br />
+                  @gmail.com
                 </a>
               </li>
               <li className="mt-4">
                 <address>
-                  123 Yarn Street, Suite 200
+                  Brains and hammers
                   <br />
-                  San Francisco, CA 94107
+                  estate galadimwa Abuja
                   <br />
-                  (555) 123-4567
+                  (+234)813 242 1252
                 </address>
               </li>
             </ul>
@@ -162,7 +165,7 @@ function Footer() {
           </motion.div>
 
           {/* Account */}
-          <motion.div variants={itemVariants} className="md:col-span-2">
+          {/* <motion.div variants={itemVariants} className="md:col-span-2">
             <h3 className="text-lg font-bold mb-4">Account</h3>
             <div className="grid grid-cols-2 gap-4">
               <ul className="space-y-2">
@@ -202,7 +205,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Divider */}

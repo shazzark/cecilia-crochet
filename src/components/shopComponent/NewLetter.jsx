@@ -35,7 +35,8 @@ function NewsLetter() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        www.yourcrochetshop.com/newsletter-signup
+        www.yourcrochetshop <br />
+        .com/ newsletter-signup
       </motion.a>
     </motion.div>
   );
