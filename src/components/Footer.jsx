@@ -46,9 +46,9 @@ function Footer() {
             </div>
             <address className="not-italic">
               {/* <p>Brains and hammers estate galadimwa</p> */}
-              <p>
+              {/* <p>
                 Brains and hammers estate <br /> galadimwa Abuja
-              </p>
+              </p> */}
               {/* <p className="mt-2">(+234)8132421252</p> */}
             </address>
           </motion.div>
