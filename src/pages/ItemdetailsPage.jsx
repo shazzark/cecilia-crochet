@@ -2,13 +2,12 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-// import { toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+
 import toast from "react-hot-toast";
-// import { supabase } from "../utils/supabaseClient";
+
 import ReviewsSection from "../components/itemDetailsComponent/ReviewsSection";
 import ProductDetails from "../components/itemDetailsComponent/ProductDetails";
-// import Quantityselector from "../components/itemDetailsComponent/Quantityselector";
+
 import SizeSelection from "../components/itemDetailsComponent/SizeSelection";
 import Breadcrumbs from "../components/itemDetailsComponent/Breadcrumbs";
 import ImageGallery from "../components/itemDetailsComponent/ImageGallery";

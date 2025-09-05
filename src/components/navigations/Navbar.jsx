@@ -10,7 +10,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { user } = useAuth();
+  const { user, role } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,6 +76,11 @@ function Navbar() {
                   <li className="font-family-inter text-lg text-crochetText-700">
                     <NavLink to="/contact">Contact</NavLink>
                   </li>
+                  {role === "admin" && (
+                    <li className="font-family-inter text-lg text-crochetText-700">
+                      <NavLink to="/admin">Admin</NavLink>
+                    </li>
+                  )}
                 </ul>
               </nav>
 
@@ -153,6 +158,14 @@ function Navbar() {
                           Contact
                         </NavLink>
                       </li>
+                      {role === "admin" && (
+                        <li className="font-family-inter text-lg text-crochetText-700 px-4 py-2">
+                          <NavLink to="/admin" onClick={() => setIsOpen(false)}>
+                            Admin
+                          </NavLink>
+                        </li>
+                      )}
+
                       <li>
                         {user ? (
                           <NavLink
@@ -232,6 +245,12 @@ function Navbar() {
                   <li className="font-family-inter text-lg text-crochetText-700">
                     <NavLink to="/contact">Contact</NavLink>
                   </li>
+                  {/* ADDED ADMIN LINK TO REGULAR HEADER */}
+                  {role === "admin" && (
+                    <li className="font-family-inter text-lg text-crochetText-700">
+                      <NavLink to="/admin">Admin</NavLink>
+                    </li>
+                  )}
                 </ul>
               </nav>
 
@@ -309,6 +328,14 @@ function Navbar() {
                           Contact
                         </NavLink>
                       </li>
+                      {/* ADDED ADMIN LINK TO REGULAR MOBILE MENU */}
+                      {role === "admin" && (
+                        <li className="font-family-inter text-lg text-crochetText-700 px-4 py-2">
+                          <NavLink to="/admin" onClick={() => setIsOpen(false)}>
+                            Admin
+                          </NavLink>
+                        </li>
+                      )}
                       <li>
                         {user ? (
                           <NavLink

@@ -15,6 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoutes";
 import { AuthProvider } from "./Context/AuthProvider";
 import ProfilePage from "./pages/ProfilePage";
 import SettingsPage from "./pages/SettingsPage";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   return (
@@ -28,6 +29,15 @@ function App() {
               <Route path="about" element={<AboutPages />} />
               <Route path="contact" element={<ContactPages />} />
               <Route path="product" element={<ProductPages />} />
+              <Route
+                path="admin"
+                element={
+                  <ProtectedRoute adminOnly={true}>
+                    {" "}
+                    <AdminPage />
+                  </ProtectedRoute>
+                }
+              />
 
               {/* Protected Routes */}
               <Route
@@ -55,7 +65,15 @@ function App() {
                 }
               />
 
-              <Route path="/itemdetails/:id" element={<ItemdetailsPage />} />
+              <Route
+                path="/itemdetails/:id"
+                element={
+                  <ProtectedRoute>
+                    {" "}
+                    <ItemdetailsPage />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="payment" element={<Payment />} />
             </Route>
 
